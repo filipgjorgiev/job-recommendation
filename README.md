@@ -166,24 +166,28 @@ After training, the model can be used to recommend jobs for **new candidates**. 
      - **Strong match** (≥ 75%)  
      - **Moderate match** (60–74%)  
      - **Weak match** (< 60%)
-     
+
+This final step transforms the learned embeddings into **actionable job recommendations** that can be directly interpreted by recruiters or candidates.
 
 ### Example Output
 
-| Job ID   | Title                                | Company Name                 | Cosine | Logit  | Match Prob (%) | Match Level |
-|----------|--------------------------------------|------------------------------|--------|--------|----------------|-------------|
-| 2029873  | DevOps Engineer                      | Esyconnect                   | 0.4995 | 9.9896 | 99.0           | Strong      |
-| 2034578  | Senior Lead Java Developer           | UMPISA INC                   | 0.4795 | 9.5907 | 98.6           | Strong      |
-| 2030072  | Senior Java Developer                | CC.Talent                    | 0.4486 | 8.9714 | 97.6           | Strong      |
-| 2037734  | Level 1 Helpdesk Engineer            | Staff Domain Inc.            | 0.4476 | 8.9521 | 97.6           | Strong      |
-| 2028991  | Integrations Engineer / Java Developer | Omilia                    | 0.4472 | 8.9430 | 97.6           | Strong      |
-| 2022739  | Senior FullStack Developer           | Acumatica                    | 0.4378 | 8.7564 | 97.1           | Strong      |
-| 2030951  | DevOps Engineer                      | Pulselive                    | 0.4361 | 8.7215 | 97.1           | Strong      |
-| 2045144  | Distributed Cloud \| AWS DevOps Engineer | Devoteam                 | 0.4043 | 8.0866 | 95.0           | Strong      |
-| 2043621  | Senior QA Engineer                   | Ocient                       | 0.3989 | 7.9774 | 94.5           | Strong      |
-| 2044895  | Senior Account Manager               | DS Smith Packaging Limited   | 0.3987 | 7.9733 | 94.5           | Strong      |
+Below is an example of the **top-10 recommended jobs** for a candidate CV.  
+Each row includes the job ID, title, company name, cosine similarity score, model logit, calibrated match probability, and a categorical match level.
+
+| Job ID   | Title                                  | Company Name                 | Cosine | Logit  | Match Prob (%) | Match Level |
+|----------|----------------------------------------|------------------------------|--------|--------|----------------|-------------|
+| 2029873  | DevOps Engineer                        | Esyconnect                   | 0.4995 | 9.9896 | 99.0           | Strong      |
+| 2034578  | Senior Lead Java Developer             | UMPISA INC                   | 0.4795 | 9.5907 | 98.6           | Strong      |
+| 2030072  | Senior Java Developer                  | CC.Talent                    | 0.4486 | 8.9714 | 97.6           | Strong      |
+| 2037734  | Level 1 Helpdesk Engineer              | Staff Domain Inc.            | 0.4476 | 8.9521 | 97.6           | Strong      |
+| 2028991  | Integrations Engineer / Java Developer | Omilia                       | 0.4472 | 8.9430 | 97.6           | Strong      |
+| 2022739  | Senior FullStack Developer             | Acumatica                    | 0.4378 | 8.7564 | 97.1           | Strong      |
+| 2030951  | DevOps Engineer                        | Pulselive                    | 0.4361 | 8.7215 | 97.1           | Strong      |
+| 2045144  | Distributed Cloud \| AWS DevOps Engineer | Devoteam                   | 0.4043 | 8.0866 | 95.0           | Strong      |
+| 2043621  | Senior QA Engineer                     | Ocient                       | 0.3989 | 7.9774 | 94.5           | Strong      |
+| 2044895  | Senior Account Manager                 | DS Smith Packaging Limited   | 0.3987 | 7.9733 | 94.5           | Strong      |
 
 
-This final step transforms the learned embeddings into **actionable job recommendations** that can be directly interpreted by recruiters or candidates.
+
 
 
