@@ -1,0 +1,12 @@
+python-dotenv
+openai
+pandas
+numpy
+scikit-learn
+sentence-transformers
+torch
+torch-geometric
+PyPDF2
+pdfminer.six
+docx2txt
+python-dateutil
