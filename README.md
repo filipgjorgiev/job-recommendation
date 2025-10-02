@@ -1,13 +1,17 @@
-# LinkPredictionJobs
+# Link Prediction for Job Recommendations
 
-Jupyter notebook for link prediction / job recommendation experiments.
+Jupyter notebook which explores link prediction on a heterogeneous graph of candidates, jobs, and skills. The model is trained to predict candidate–job matches using embeddings and evaluated with metrics such as ROC-AUC and Average Precision.
 
-## Setup
-Create a virtual environment, activate it, then install requirements:
 
-python -m venv .venv
-On Windows: .venv\Scripts\activate
-On macOS/Linux: source .venv/bin/activate
+- [Installation](#installation)
+- [Dataset](#dataset)
+- [Notebook Usage](#notebook-usage)
+- [Modeling Approach](#modeling-approach)
+- [Evaluation](#evaluation)
+- [Results](#results)
+
+
+# Instalation
+git clone  https://github.com/filipgjorgiev/job-recommendation.git
+cd JobRec
 pip install -r requirements.txt
-
-Keep secrets in a local `.env` (not committed) and load them with `python-dotenv`.
